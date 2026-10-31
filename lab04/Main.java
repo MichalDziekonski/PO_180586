@@ -1,3 +1,6 @@
+import Zad12.NewCar;
+import Zad12.Motorcycle;
+import Zad12.Truck;
 import package2.Employee;
 import package2.Manager;
 
@@ -7,7 +10,11 @@ public class Main {
         //zad4();
         //zad5();
         //zad6();
-        zad7();
+        //zad7();
+        //zad8();
+        //zad10();
+        //zad11();
+        zad12();
     }
 
     public static void zad3() {
@@ -44,4 +51,35 @@ public class Main {
         l1.RamInfo();
         l1.BatterLive();
     }
+
+    public static void zad8() {
+        Book b1 = new Book("ACB for dumy", "Jan kowalski", 2026);
+        System.out.println(b1);
+        System.out.println(b1.getClass());
+    }
+
+    public static void zad10() {
+        Document d1 = new Document();
+        Document d2 = d1.copy();
+
+        Report r1 = new Report();
+        Report r2 = r1.copy();
+    }
+
+    public static void zad11() {
+        Student s1 = new Student("Michal", 180586);
+        s1.showInformation();
+        s1.showInformations();
+    }
+
+    public static void zad12() {
+        NewCar c1 = new NewCar("1.8t", 5);
+        Motorcycle m1 = new Motorcycle("Yamaha XT 660", 40);
+        Truck t1 = new Truck("Cummins X15", 26);
+
+        c1.showInfo();
+        System.out.println(m1.toString());
+        t1.showInfo();
+    }
+
 }
